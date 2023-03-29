@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@275;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  padding-bottom: 8rem;
+}
+
+.header-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 7.5rem 3.2rem;
+}
+
+.header-h1-light {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 275;
+  color: #4d4f62;
+}
+
+.header-h1-bold {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  letter-spacing: 0.017rem;
+  color: #4d4f62;
+}
+
+.header-p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+  color: #4d4f62;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 3.2rem;
+  margin: 0 3.2rem;
+  background-color: #ffffff;
+  box-shadow: 0 15px 30px -11px rgba(131, 167, 210, 0.5);
+  margin-top: 2.2rem;
+  border-radius: 0.8rem;
+}
+
+.titles {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #4d4f62;
+}
+
+.paragraphs {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  letter-spacing: 0.009rem;
+  color: #4d4f62;
+}
+
+.icons {
+  align-self: flex-end;
+  margin-top: 4rem;
+}
+
+.supervisor-card {
+  border-top: 4px solid #44d3d2;
+}
+.team-builder-card {
+  border-top: 4px solid #ea5454;
+}
+.karma-card {
+  border-top: 4px solid #fcae4a;
+}
+
+.calculator-card {
+  border-top: 4px solid #549ef2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 144rem;
+    padding-bottom: 0;
+  }
+
+  .header-text-box {
+    gap: 0.5rem;
+  }
+
+  .header-h1-light,
+  .header-h1-bold {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .header-p {
+    padding: 0 42rem;
+  }
+
+  .flex {
+    padding: 4rem 4.2rem;
+    margin: 0;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 10rem 10rem 10rem;
+  }
+
+  .supervisor-card {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  .team-builder-card {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .karma-card {
+    grid-column: 2/3;
+    grid-row: 2/-1;
+  }
+
+  .calculator-card {
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+  }
+}
