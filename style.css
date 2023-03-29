@@ -113,7 +113,7 @@ html {
 
 @media (min-width: 1440px) {
   .container {
-    width: 144rem;
+    width: 100%;
     padding-bottom: 0;
   }
 
@@ -163,5 +163,12 @@ html {
   .calculator-card {
     grid-column: 3/-1;
     grid-row: 1/-1;
+  }
+}
+
+@media (min-width: 1443px) {
+  .flex {
+    padding: 4rem 6.2rem;
+    margin: 0;
   }
 }
